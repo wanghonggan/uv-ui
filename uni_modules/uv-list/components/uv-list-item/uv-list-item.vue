@@ -54,7 +54,9 @@
 					</view>
 				</slot>
 			</view>
-			<uv-icon v-if="showArrow || link" size="34rpx" class="uv-icon-wrapper" color="#bbb" name="arrow-right" />
+      <view v-if="showArrow || link" class="uv-icon-wrapper">
+        <uv-icon  size="34rpx"  color="#bbb" name="arrow-right" />
+      </view>
 		</view>
 		<!-- #ifdef APP-NVUE -->
 	</cell>
