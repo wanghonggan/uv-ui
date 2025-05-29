@@ -1,4 +1,6 @@
 // 此版本发布于2024-01-24
+import * as index from "../function";
+
 const version = '1.1.20';
 
 // 开发环境才提示，生产环境不会提示
@@ -6,7 +8,7 @@ if (process.env.NODE_ENV === 'development') {
 	console.log(`\n %c uvui V${version} https://www.uvui.cn/ \n\n`, 'color: #ffffff; background: #3c9cff; padding:5px 0; border-radius: 5px;');
 }
 
-export default {
+export const config = {
     v: version,
     version,
     // 主题名称
@@ -34,4 +36,8 @@ export default {
     // 组件默认配置
     props: {},
     zIndex: 100,
+}
+
+export function setConfig(_config) {
+    Object.assign(config, _config)
 }

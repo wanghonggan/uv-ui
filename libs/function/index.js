@@ -676,16 +676,6 @@ function getHistoryPage(back = 0) {
 	return pages[len - 1 + back]
 }
 
-
-
-/**
- * @description 修改uvui内置属性值
- * @param {object} config 修改内置config属性
- */
-function setConfig(config) {
-	uni.$uv.config = uni.$uv.deepMerge(uni.$uv.config, config)
-}
-
 export {
 	range,
 	getPx,
@@ -715,6 +705,5 @@ export {
 	setProperty,
 	page,
 	pages,
-	getHistoryPage,
-	setConfig
+	getHistoryPage
 }

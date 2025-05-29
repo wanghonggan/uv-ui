@@ -1,5 +1,5 @@
 import { range } from '../../libs/function/test.js'
-import config from "../../libs/config/config";
+import { config } from "../../libs/config/config";
 
 export default {
 	props: {
