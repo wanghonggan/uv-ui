@@ -1,4 +1,5 @@
-import { error } from '../../libs/function/index.js'
+import { error } from '../../libs/function'
+
 export default {
     watch: {
         // 监听accept的变化，判断是否符合个平台要求

@@ -1,3 +1,5 @@
+import config from "../../libs/config/config";
+
 export default {
 	props: {
 		// 显示的内容，数组
@@ -71,6 +73,6 @@ export default {
 			type: Boolean,
 			default: false
 		},
-		...uni.$uv?.props?.noticeBar
+		...config.props.noticeBar
 	}
 }

@@ -1,3 +1,5 @@
+import config from "../../libs/config/config";
+
 export default {
 	props: {
 		// input的label提示语
@@ -44,6 +46,6 @@ export default {
 			type: [String, Object],
 			default: ''
 		},
-		...uni.$uv?.props?.formItem
+		...config.props.formItem
 	}
 }

@@ -1,3 +1,5 @@
+import config from "../../libs/config/config";
+
 export default {
 	props: {
 		// 默认的显示占位高度
@@ -57,6 +59,6 @@ export default {
 			type: [String, Number],
 			default: ''
 		},
-		...uni.$uv?.props?.readMore
+		...config.props.readMore
 	}
 }

@@ -1,3 +1,5 @@
+import config from "../../libs/config/config";
+
 export default {
 	props: {
 		value: {
@@ -53,6 +55,6 @@ export default {
 			type: Boolean,
 			default: false
 		},
-		...uni.$uv?.props?.slider
+		...config.props.slider
 	}
 }

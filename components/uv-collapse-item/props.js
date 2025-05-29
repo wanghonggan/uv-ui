@@ -1,3 +1,5 @@
+import config from "../../libs/config/config";
+
 export default {
 	props: {
 		// 标题
@@ -55,6 +57,6 @@ export default {
 			type: Number,
 			default: 300
 		},
-		...uni.$uv?.props?.collapseItem
+		...config.props.collapseItem
 	}
 }

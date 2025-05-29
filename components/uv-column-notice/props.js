@@ -1,3 +1,5 @@
+import config from "../../libs/config/config";
+
 export default {
 	props: {
 		// 显示的内容，字符串
@@ -56,6 +58,6 @@ export default {
 			type: Boolean,
 			default: false
 		},
-		...uni.$uv?.props?.columnNotice
+		...config.props.columnNotice
 	}
 }

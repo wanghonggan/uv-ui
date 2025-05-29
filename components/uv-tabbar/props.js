@@ -1,3 +1,5 @@
+import config from "../../libs/config/config";
+
 export default {
 	props: {
 		// 当前匹配项的name
@@ -45,6 +47,6 @@ export default {
 			type: [String, Number],
 			default: 20
 		},
-		...uni.$uv?.props?.tabbar
+		...config.props.tabbar
 	}
 }

@@ -1,3 +1,5 @@
+import config from "../../libs/config/config";
+
 export default {
 	props: {
 		// 是否展示骨架组件
@@ -60,6 +62,6 @@ export default {
 			type: String,
 			default: 'circle'
 		},
-		...uni.$uv?.props?.skeleton
+		...config.props.skeleton
 	}
 }

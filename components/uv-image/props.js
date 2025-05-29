@@ -1,3 +1,5 @@
+import config from "../../libs/config/config";
+
 export default {
 	props: {
 		// 图片地址
@@ -90,6 +92,6 @@ export default {
 			type: Boolean,
 			default: false
 		},
-		...uni.$uv?.props?.image
+		...config.props.image
 	}
 }

@@ -1,3 +1,5 @@
+import config from "../../libs/config/config";
+
 export default {
 	props: {
 		// 标题，有值则显示，同时会显示关闭按钮
@@ -45,6 +47,6 @@ export default {
 			type: [Boolean, String, Number],
 			default: 0
 		},
-		...uni.$uv?.props?.actionSheet
+		...config.props.actionSheet
 	}
 }

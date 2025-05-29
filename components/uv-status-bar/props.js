@@ -1,3 +1,5 @@
+import config from "../../libs/config/config";
+
 export default {
     props: {
         bgColor: {

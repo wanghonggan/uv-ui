@@ -1,3 +1,5 @@
+import config from "../../libs/config/config";
+
 export default {
 	props: {
 		// 分成几列
@@ -15,6 +17,6 @@ export default {
 			type: String,
 			default: 'left'
 		},
-		...uni.$uv?.props?.grid
+		...config.props.grid
 	}
 }

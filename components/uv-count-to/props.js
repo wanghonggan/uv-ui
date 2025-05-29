@@ -1,3 +1,5 @@
+import config from "../../libs/config/config";
+
 export default {
 	props: {
 		// 开始的数值，默认从0增长到某一个数
@@ -55,6 +57,6 @@ export default {
 			type: String,
 			default: ''
 		},
-		...uni.$uv?.props?.countTo
+		...config.props.countTo
 	}
 }

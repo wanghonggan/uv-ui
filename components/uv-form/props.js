@@ -1,3 +1,5 @@
+import config from "../../libs/config/config";
+
 export default {
 	props: {
 		// 当前form的需要验证字段的集合
@@ -41,6 +43,6 @@ export default {
 			type: Object,
 			default: () => ({})
 		},
-		...uni.$uv?.props?.form
+		...config.props.form
 	}
 }

@@ -1,3 +1,5 @@
+import config from "../../libs/config/config";
+
 export default {
 	props: {
 		// 是否显示遮罩
@@ -20,6 +22,6 @@ export default {
 			type: [String, Number],
 			default: 0.5
 		},
-		...uni.$uv?.props?.overlay
+		...config.props.overlay
 	}
 }

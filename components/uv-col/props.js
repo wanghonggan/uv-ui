@@ -1,3 +1,5 @@
+import config from "../../libs/config/config";
+
 export default {
 	props: {
 		// 占父容器宽度的多少等分，总分为12份
@@ -25,6 +27,6 @@ export default {
 			type: String,
 			default: 'left'
 		},
-		...uni.$uv?.props?.col
+		...config.props.col
 	}
 }

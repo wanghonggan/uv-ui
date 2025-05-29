@@ -1,3 +1,5 @@
+import config from "../../libs/config/config";
+
 export default {
 	props: {
 		// 标签类型info、primary、success、warning、error
@@ -90,6 +92,6 @@ export default {
 			type: Boolean,
 			default: false
 		},
-		...uni.$uv?.props?.tags
+		...config.props.tags
 	}
 }

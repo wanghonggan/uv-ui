@@ -1,3 +1,5 @@
+import config from "../../libs/config/config";
+
 export default {
 	props: {
 		// 控制打开或者关闭
@@ -35,6 +37,6 @@ export default {
 			type: [String, Number],
 			default: 300
 		},
-		...uni.$uv?.props?.swipeActionItem
+		...config.props.swipeActionItem
 	}
 }

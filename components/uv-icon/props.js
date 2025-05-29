@@ -1,3 +1,5 @@
+import config from "../../libs/config/config";
+
 export default {
 	props: {
 		// 图标类名
@@ -85,6 +87,6 @@ export default {
 			type: Boolean,
 			default: false
 		},
-		...uni.$uv?.props?.icon
+		...config.props.icon
 	}
 }

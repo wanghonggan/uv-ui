@@ -1,3 +1,5 @@
+import config from "../../libs/config/config";
+
 export default {
 	props: {
 		// 激活部分的颜色
@@ -24,6 +26,6 @@ export default {
 			type: [String, Number],
 			default: 12
 		},
-		...uni.$uv?.props?.lineProgress
+		...config.props.lineProgress
 	}
 }

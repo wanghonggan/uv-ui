@@ -1,3 +1,5 @@
+import config from "../../libs/config/config";
+
 export default {
 	props: {
 		// 是否虚线
@@ -40,6 +42,6 @@ export default {
 			type: String,
 			default: '#dcdfe6'
 		},
-		...uni.$uv?.props?.divider
+		...config.props.divider
 	}
 }

@@ -1,3 +1,5 @@
+import config from "../../libs/config/config";
+
 export default {
 	props: {
 		value: {
@@ -125,6 +127,6 @@ export default {
 			type: [String, Number],
 			default: 0
 		},
-		...uni.$uv?.props?.datetimePicker
+		...config.props.datetimePicker
 	}
 }

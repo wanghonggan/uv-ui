@@ -1,3 +1,5 @@
+import config from "../../libs/config/config";
+
 export default {
 	props: {
 		// 日历顶部标题
@@ -140,6 +142,6 @@ export default {
 			type: [Number, String],
 			default: 3
 		},
-		...uni.$uv?.props?.calendar
+		...config.props.calendar
 	}
 }

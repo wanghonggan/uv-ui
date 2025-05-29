@@ -1,3 +1,5 @@
+import config from "../../libs/config/config";
+
 export default {
 	props: {
 		// 是否自动关闭其他swipe按钮组
@@ -5,6 +7,6 @@ export default {
 			type: Boolean,
 			default: true
 		},
-		...uni.$uv?.props?.swipeAction
+		...config.props.swipeAction
 	}
 }

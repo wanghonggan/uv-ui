@@ -1,3 +1,5 @@
+import config from "../../libs/config/config";
+
 export default {
 	props: {
 		// 列表锚点文本内容
@@ -25,6 +27,6 @@ export default {
 			type: [String, Number],
 			default: 32
 		},
-		...uni.$uv?.props?.indexAnchor
+		...config.props.indexAnchor
 	}
 }

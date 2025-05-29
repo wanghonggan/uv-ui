@@ -1,3 +1,5 @@
+import config from "../../libs/config/config";
+
 export default {
 	props: {
 		color: {
@@ -29,6 +31,6 @@ export default {
 			type: Boolean,
 			default: false
 		},
-		...uni.$uv?.props?.line
+		...config.props.line
 	}
 }

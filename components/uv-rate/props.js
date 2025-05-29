@@ -1,3 +1,5 @@
+import config from "../../libs/config/config";
+
 export default {
 	props: {
 		value: {
@@ -68,6 +70,6 @@ export default {
 			type: Boolean,
 			default: false
 		},
-		...uni.$uv?.props?.rate
+		...config.props.rate
 	}
 }

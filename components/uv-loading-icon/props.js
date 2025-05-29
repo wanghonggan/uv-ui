@@ -1,3 +1,5 @@
+import config from "../../libs/config/config";
+
 export default {
 	props: {
 		// 是否显示组件
@@ -62,6 +64,6 @@ export default {
 			type: String,
 			default: ''
 		},
-		...uni.$uv?.props?.loadingIcon
+		...config.props.loadingIcon
 	}
 }

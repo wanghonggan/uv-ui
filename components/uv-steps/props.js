@@ -1,3 +1,5 @@
+import config from "../../libs/config/config";
+
 export default {
 	props: {
 		// 排列方向
@@ -35,6 +37,6 @@ export default {
 			type: Boolean,
 			default: false
 		},
-		...uni.$uv?.props?.steps
+		...config.props.steps
 	}
 }

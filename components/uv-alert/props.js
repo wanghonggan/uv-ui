@@ -1,3 +1,5 @@
+import config from "../../libs/config/config";
+
 export default {
 	props: {
 		// 显示文字
@@ -40,6 +42,6 @@ export default {
 			type: [String, Number],
 			default: 14
 		},
-		...uni.$uv?.props?.alert
+		...config.props.alert
 	}
 }

@@ -1,3 +1,5 @@
+import config from "../../libs/config/config";
+
 export default {
 	props: {
 		// 背景颜色（默认transparent）
@@ -20,6 +22,6 @@ export default {
 			type: [String, Number],
 			default: 0
 		},
-		...uni.$uv?.props?.gap
+		...config.props.gap
 	}
 }
