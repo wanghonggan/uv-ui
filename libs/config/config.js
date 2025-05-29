@@ -6,8 +6,6 @@ if (process.env.NODE_ENV === 'development') {
 	console.log(`\n %c uvui V${version} https://www.uvui.cn/ \n\n`, 'color: #ffffff; background: #3c9cff; padding:5px 0; border-radius: 5px;');
 }
 
-fetch(version, {})
-
 export const config = {
     v: version,
     version,
