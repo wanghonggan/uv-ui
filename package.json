@@ -28,7 +28,8 @@
 		"access": "public",
 		"registry": "https://registry.npmjs.org/"
 	},
-	"dependencies": {
-		"@climblee/uv-ui": "^1.1.20"
+	"devDependencies": {
+		"@climblee/uv-ui": "^1.1.20",
+		"@wanghonggan/uv-ui": "^1.1.24"
 	}
 }
