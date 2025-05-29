@@ -1,3 +1,5 @@
+import defaultProps from "../../libs/config/defaultProps";
+
 export default {
 	props: {
 		// item标签的名称，作为与uv-tabbar的value参数匹配的标识符
@@ -35,6 +37,6 @@ export default {
 			type: [Object, String],
 			default: 'top: 6px;right:2px;'
 		},
-		...uni.$uv?.props?.tabbarItem
+		...defaultProps.tabbarItem
 	}
 }

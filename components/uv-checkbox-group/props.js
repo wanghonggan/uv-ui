@@ -1,3 +1,5 @@
+import defaultProps from "../../libs/config/defaultProps";
+
 export default {
 	props: {
 		// 绑定的值
@@ -79,6 +81,6 @@ export default {
 			type: Boolean,
 			default: false
 		},
-		...uni.$uv?.props?.checkboxGroup
+		...defaultProps.checkboxGroup
 	}
 }

@@ -1,3 +1,5 @@
+import defaultProps from "../../libs/config/defaultProps";
+
 export default {
 	props: {
 		// 提示内容
@@ -50,6 +52,6 @@ export default {
 			type: [String, Number],
 			default: 300
 		},
-		...uni.$uv?.props?.loadingPage
+		...defaultProps.loadingPage
 	}
 }

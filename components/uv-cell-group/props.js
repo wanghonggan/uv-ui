@@ -1,3 +1,5 @@
+import defaultProps from "../../libs/config/defaultProps";
+
 export default {
 	props: {
 		// 分组标题
@@ -10,6 +12,6 @@ export default {
 			type: Boolean,
 			default: true
 		},
-		...uni.$uv?.props?.cellGroup
+		...defaultProps.cellGroup
 	}
 }

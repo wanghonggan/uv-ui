@@ -1,3 +1,5 @@
+import defaultProps from "../../libs/config/defaultProps";
+
 export default {
 	props: {
 		// 当前展开面板的name，非手风琴模式：[<string | number>]，手风琴模式：string | number
@@ -15,6 +17,6 @@ export default {
 			type: Boolean,
 			default: true
 		},
-		...uni.$uv?.props?.collapse
+		...defaultProps.collapse
 	}
 }

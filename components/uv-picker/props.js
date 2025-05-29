@@ -1,3 +1,5 @@
+import defaultProps from "../../libs/config/defaultProps";
+
 export default {
 	props: {
 		// 是否展示顶部的操作栏
@@ -90,6 +92,6 @@ export default {
 			type: Boolean,
 			default: true
 		},
-		...uni.$uv?.props?.picker
+		...defaultProps.picker
 	}
 }

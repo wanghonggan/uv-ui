@@ -1,3 +1,5 @@
+import defaultProps from "../../libs/config/defaultProps";
+
 export default {
 	props: {
 		value: {
@@ -170,6 +172,6 @@ export default {
 			type: Boolean,
 			default: true
 		},
-		...uni.$uv?.props?.input
+		...defaultProps.input
 	}
 }

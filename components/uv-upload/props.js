@@ -1,3 +1,5 @@
+import defaultProps from "../../libs/config/defaultProps";
+
 export default {
 	props: {
 		// 接受的文件类型, 可选值为all media image file video
@@ -125,6 +127,6 @@ export default {
 			type: Boolean,
 			default: true
 		},
-		...uni.$uv?.props?.upload
+		...defaultProps.upload
 	}
 }

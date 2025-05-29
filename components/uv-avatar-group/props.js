@@ -1,3 +1,5 @@
+import defaultProps from "../../libs/config/defaultProps";
+
 export default {
 	props: {
 		// 头像图片组
@@ -48,6 +50,6 @@ export default {
 			type: [Number, String],
 			default: 0
 		},
-		...uni.$uv?.props?.avatarGroup
+		...defaultProps.avatarGroup
 	}
 }

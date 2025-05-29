@@ -1,3 +1,5 @@
+import defaultProps from "../../libs/config/defaultProps";
+
 export default {
 	props: {
 		// 是否细边框
@@ -158,6 +160,6 @@ export default {
 			type: [Object,String],
 			default: ''
 		},
-		...uni.$uv?.props?.button
+		...defaultProps.button
 	}
 }

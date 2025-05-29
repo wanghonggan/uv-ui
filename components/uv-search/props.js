@@ -1,3 +1,5 @@
+import defaultProps from "../../libs/config/defaultProps";
+
 export default {
 	props: {
 		value: {
@@ -122,6 +124,6 @@ export default {
 			type: [String, Object],
 			default: () => ({})
 		},
-		...uni.$uv?.props?.search
+		...defaultProps.search
 	}
 }

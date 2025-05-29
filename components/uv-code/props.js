@@ -1,3 +1,5 @@
+import defaultProps from "../../libs/config/defaultProps";
+
 export default {
 	props: {
 		// 倒计时总秒数
@@ -30,6 +32,6 @@ export default {
 			type: String,
 			default: ''
 		},
-		...uni.$uv?.props?.code
+		...defaultProps.code
 	}
 }

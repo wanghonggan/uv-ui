@@ -1,3 +1,5 @@
+import defaultProps from "../../libs/config/defaultProps";
+
 export default {
 	props: {
 		value: {
@@ -133,6 +135,6 @@ export default {
 			type: [Object, String],
 			default: () => {}
 		},
-		...uni.$uv?.props?.textarea
+		...defaultProps.textarea
 	}
 }

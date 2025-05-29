@@ -1,3 +1,5 @@
+import defaultProps from "../../libs/config/defaultProps";
+
 export default {
 	props: {
 		// 是否显示圆点
@@ -68,6 +70,6 @@ export default {
 			type: Boolean,
 			default: false
 		},
-		...uni.$uv?.props?.badge
+		...defaultProps.badge
 	}
 }

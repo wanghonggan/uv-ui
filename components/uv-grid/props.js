@@ -1,3 +1,5 @@
+import defaultProps from "../../libs/config/defaultProps";
+
 export default {
 	props: {
 		// 分成几列
@@ -15,6 +17,6 @@ export default {
 			type: String,
 			default: 'left'
 		},
-		...uni.$uv?.props?.grid
+		...defaultProps.grid
 	}
 }

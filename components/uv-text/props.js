@@ -1,3 +1,5 @@
+import defaultProps from "../../libs/config/defaultProps";
+
 export default {
 	props: {
 		// 主题颜色
@@ -108,6 +110,6 @@ export default {
 			type: String,
 			default: 'normal'
 		},
-		...uni.$uv?.props?.text
+		...defaultProps.text
 	}
 }

@@ -1,3 +1,5 @@
+import defaultProps from "../../libs/config/defaultProps";
+
 export default {
 	props: {
 		// radio的名称
@@ -60,6 +62,6 @@ export default {
 			type: String,
 			default: ''
 		},
-		...uni.$uv?.props?.radio
+		...defaultProps.radio
 	}
 }

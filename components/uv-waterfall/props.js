@@ -1,3 +1,5 @@
+import defaultProps from "../../libs/config/defaultProps";
+
 export default {
 	props: {
 		// 瀑布流数据
@@ -64,6 +66,6 @@ export default {
 			type: [Number, String],
 			default: ''
 		},
-		...uni.$uv?.props?.waterfall
+		...defaultProps.waterfall
 	}
 }

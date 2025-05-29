@@ -1,3 +1,5 @@
+import defaultProps from "../../libs/config/defaultProps";
+
 export default {
 	props: {
 		// 轮播的长度
@@ -25,6 +27,6 @@ export default {
 			type: String,
 			default: ''
 		},
-		...uni.$uv?.props?.swiperIndicator
+		...defaultProps.swiperIndicator
 	}
 }

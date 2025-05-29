@@ -1,3 +1,5 @@
+import defaultProps from "../../libs/config/defaultProps";
+
 export default {
 	props: {
 		// 标题
@@ -85,6 +87,6 @@ export default {
 			type: [Object, String],
 			default: ''
 		},
-		...uni.$uv?.props?.modal
+		...defaultProps.modal
 	}
 }

@@ -1,3 +1,5 @@
+import defaultProps from "../../libs/config/defaultProps";
+
 export default {
 	props: {
 		// 颜色选择器初始颜色
@@ -42,6 +44,6 @@ export default {
 			type: String,
 			default: '#3c9cff'
 		},
-		...uni.$uv?.props?.pickColor
+		...defaultProps.pickColor
 	}
 }

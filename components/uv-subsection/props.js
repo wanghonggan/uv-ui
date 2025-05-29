@@ -1,3 +1,5 @@
+import defaultProps from "../../libs/config/defaultProps";
+
 export default {
 	props: {
 		// tab的数据
@@ -49,6 +51,6 @@ export default {
 			type: [String, Object],
 			default: ''
 		},
-		...uni.$uv?.props?.subsection
+		...defaultProps.subsection
 	}
 }

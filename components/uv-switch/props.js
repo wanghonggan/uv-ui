@@ -1,3 +1,5 @@
+import defaultProps from "../../libs/config/defaultProps";
+
 export default {
 	props: {
 		value: {
@@ -53,6 +55,6 @@ export default {
 			type: [String, Number],
 			default: 0
 		},
-		...uni.$uv?.props?.switch
+		...defaultProps.switch
 	}
 }

@@ -1,4 +1,6 @@
 import { range } from '../../libs/function/test.js'
+import defaultProps from "../../libs/config/defaultProps";
+
 export default {
 	props: {
 		// 头像图片路径(不能为相对路径)
@@ -75,6 +77,6 @@ export default {
 			type: String,
 			default: ''
 		},
-		...uni.$uv?.props?.avatar
+		...defaultProps.avatar
 	}
 }

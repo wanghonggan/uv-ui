@@ -1,3 +1,5 @@
+import defaultProps from "../../libs/config/defaultProps";
+
 export default {
 	props: {
 		// 给col添加间距，左右边距各占一半
@@ -15,6 +17,6 @@ export default {
 			type: String,
 			default: 'center'
 		},
-		...uni.$uv?.props?.row
+		...defaultProps.row
 	}
 }

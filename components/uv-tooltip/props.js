@@ -1,3 +1,5 @@
+import defaultProps from "../../libs/config/defaultProps";
+
 export default {
 	props: {
 		// 需要显示的提示文字
@@ -55,6 +57,6 @@ export default {
 			type: Boolean,
 			default: true
 		},
-		...uni.$uv?.props?.tooltip
+		...defaultProps.tooltip
 	}
 }

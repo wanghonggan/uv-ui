@@ -1,3 +1,5 @@
+import defaultProps from "../../libs/config/defaultProps";
+
 export default {
 	props: {
 		// 是否开启顶部安全区适配
@@ -84,6 +86,6 @@ export default {
 			type: [String, Object],
 			default: ''
 		},
-		...uni.$uv?.props?.navbar
+		...defaultProps.navbar
 	}
 }

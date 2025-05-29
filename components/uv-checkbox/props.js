@@ -1,3 +1,5 @@
+import defaultProps from "../../libs/config/defaultProps";
+
 export default {
 	props: {
 		// checkbox的名称
@@ -65,6 +67,6 @@ export default {
 			type: [String, Boolean],
 			default: ''
 		},
-		...uni.$uv?.props?.checkbox
+		...defaultProps.checkbox
 	}
 }

@@ -1,3 +1,5 @@
+import defaultProps from "../../libs/config/defaultProps";
+
 export default {
 	props: {
 		// 到顶部的距离
@@ -40,6 +42,6 @@ export default {
 			type: Boolean,
 			default: false
 		},
-		...uni.$uv?.props?.notify
+		...defaultProps.notify
 	}
 }

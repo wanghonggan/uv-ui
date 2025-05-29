@@ -1,3 +1,5 @@
+import defaultProps from "../../libs/config/defaultProps";
+
 export default {
 	props: {
 		// 标题
@@ -20,6 +22,6 @@ export default {
 			type: Boolean,
 			default: false
 		},
-		...uni.$uv?.props?.stepsItem
+		...defaultProps.stepsItem
 	}
 }

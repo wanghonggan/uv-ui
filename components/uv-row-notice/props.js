@@ -1,3 +1,5 @@
+import defaultProps from "../../libs/config/defaultProps";
+
 export default {
 	props: {
 		// 显示的内容，字符串
@@ -35,6 +37,6 @@ export default {
 			type: [String, Number],
 			default: 80
 		},
-		...uni.$uv?.props?.rowNotice
+		...defaultProps.rowNotice
 	}
 }

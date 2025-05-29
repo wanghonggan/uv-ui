@@ -1,3 +1,5 @@
+import defaultProps from "../../libs/config/defaultProps";
+
 export default {
 	props: {
 		// 宫格的name
@@ -10,6 +12,6 @@ export default {
 			type: String,
 			default: 'transparent'
 		},
-		...uni.$uv?.props?.gridItem
+		...defaultProps.gridItem
 	}
 }

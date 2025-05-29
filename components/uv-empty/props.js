@@ -1,3 +1,5 @@
+import defaultProps from "../../libs/config/defaultProps";
+
 export default {
 	props: {
 		// 内置图标名称，或图片路径，建议绝对路径
@@ -55,6 +57,6 @@ export default {
 			type: [String, Number],
 			default: 0
 		},
-		...uni.$uv?.props?.empty
+		...defaultProps.empty
 	}
 }
