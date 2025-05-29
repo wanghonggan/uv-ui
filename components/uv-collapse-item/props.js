@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 标题
@@ -57,6 +55,6 @@ export default {
 			type: Number,
 			default: 300
 		},
-		...getPropsByKey('collapseItem')
+		...uni.$uv?.props?.collapseItem
 	}
 }

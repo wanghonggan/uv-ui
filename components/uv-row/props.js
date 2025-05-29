@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 给col添加间距，左右边距各占一半
@@ -17,6 +15,6 @@ export default {
 			type: String,
 			default: 'center'
 		},
-		...getPropsByKey('row')
+		...uni.$uv?.props?.row
 	}
 }

@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
     props: {
         bgColor: {

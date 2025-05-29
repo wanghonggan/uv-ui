@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// tab的数据
@@ -51,6 +49,6 @@ export default {
 			type: [String, Object],
 			default: ''
 		},
-		...getPropsByKey('subsection')
+		...uni.$uv?.props?.subsection
 	}
 }

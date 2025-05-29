@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 显示的内容，字符串
@@ -58,6 +56,6 @@ export default {
 			type: Boolean,
 			default: false
 		},
-		...getPropsByKey('columnNotice')
+		...uni.$uv?.props?.columnNotice
 	}
 }

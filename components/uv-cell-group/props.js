@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 分组标题
@@ -12,6 +10,6 @@ export default {
 			type: Boolean,
 			default: true
 		},
-		...getPropsByKey('cellGroup')
+		...uni.$uv?.props?.cellGroup
 	}
 }

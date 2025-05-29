@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 控制打开或者关闭
@@ -37,6 +35,6 @@ export default {
 			type: [String, Number],
 			default: 300
 		},
-		...getPropsByKey('swipeActionItem')
+		...uni.$uv?.props?.swipeActionItem
 	}
 }

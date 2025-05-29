@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// checkbox的名称
@@ -67,6 +65,6 @@ export default {
 			type: [String, Boolean],
 			default: ''
 		},
-		...getPropsByKey('checkbox')
+		...uni.$uv?.props?.checkbox
 	}
 }

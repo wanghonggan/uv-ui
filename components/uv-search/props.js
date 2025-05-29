@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		value: {
@@ -124,6 +122,6 @@ export default {
 			type: [String, Object],
 			default: () => ({})
 		},
-		...getPropsByKey('search')
+		...uni.$uv?.props?.search
 	}
 }

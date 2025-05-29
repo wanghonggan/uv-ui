@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 显示的内容，字符串
@@ -37,6 +35,6 @@ export default {
 			type: [String, Number],
 			default: 80
 		},
-		...getPropsByKey('rowNotice')
+		...uni.$uv?.props?.rowNotice
 	}
 }

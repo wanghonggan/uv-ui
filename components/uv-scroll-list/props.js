@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 指示器的整体宽度
@@ -32,6 +30,6 @@ export default {
 			type: [String, Object],
 			default: ''
 		},
-		...getPropsByKey('scrollList')
+		...uni.$uv?.props?.scrollList
 	}
 }

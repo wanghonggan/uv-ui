@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 倒计时时长，单位ms
@@ -22,6 +20,6 @@ export default {
 			type: Boolean,
 			default: false
 		},
-		...getPropsByKey('countDown')
+		...uni.$uv?.props?.countDown
 	}
 }

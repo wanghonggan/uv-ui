@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 显示文字
@@ -42,6 +40,6 @@ export default {
 			type: [String, Number],
 			default: 14
 		},
-		...getPropsByKey('alert')
+		...uni.$uv?.props?.alert
 	}
 }

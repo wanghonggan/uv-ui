@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 主题颜色
@@ -110,6 +108,6 @@ export default {
 			type: String,
 			default: 'normal'
 		},
-		...getPropsByKey('text')
+		...uni.$uv?.props?.text
 	}
 }

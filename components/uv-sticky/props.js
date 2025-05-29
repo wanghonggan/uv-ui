@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 吸顶容器到顶部某个距离的时候，进行吸顶，在H5平台，NavigationBar为44px
@@ -38,6 +36,6 @@ export default {
 			type: [String, Number],
 			default: ''
 		},
-		...getPropsByKey('sticky')
+		...uni.$uv?.props?.sticky
 	}
 }

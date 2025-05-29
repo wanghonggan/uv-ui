@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 是否显示组件
@@ -64,6 +62,6 @@ export default {
 			type: String,
 			default: ''
 		},
-		...getPropsByKey('loadingIcon')
+		...uni.$uv?.props?.loadingIcon
 	}
 }

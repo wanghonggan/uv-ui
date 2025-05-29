@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 右边锚点非激活的颜色
@@ -27,6 +25,6 @@ export default {
 			type: [String, Number],
 			default: 0
 		},
-		...getPropsByKey('indexList')
+		...uni.$uv?.props?.indexList
 	}
 }

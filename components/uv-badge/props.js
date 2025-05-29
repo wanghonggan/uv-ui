@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 是否显示圆点
@@ -70,6 +68,6 @@ export default {
 			type: Boolean,
 			default: false
 		},
-		...getPropsByKey('badge')
+		...uni.$uv?.props?.badge
 	}
 }

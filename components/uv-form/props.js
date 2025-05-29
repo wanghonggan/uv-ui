@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 当前form的需要验证字段的集合
@@ -43,6 +41,6 @@ export default {
 			type: Object,
 			default: () => ({})
 		},
-		...getPropsByKey('form')
+		...uni.$uv?.props?.form
 	}
 }

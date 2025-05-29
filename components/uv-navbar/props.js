@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 是否开启顶部安全区适配
@@ -86,6 +84,6 @@ export default {
 			type: [String, Object],
 			default: ''
 		},
-		...getPropsByKey('navbar')
+		...uni.$uv?.props?.navbar
 	}
 }

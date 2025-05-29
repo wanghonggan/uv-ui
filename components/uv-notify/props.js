@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 到顶部的距离
@@ -42,6 +40,6 @@ export default {
 			type: Boolean,
 			default: false
 		},
-		...getPropsByKey('notify')
+		...uni.$uv?.props?.notify
 	}
 }

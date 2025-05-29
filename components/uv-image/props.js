@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 图片地址
@@ -92,6 +90,6 @@ export default {
 			type: Boolean,
 			default: false
 		},
-		...getPropsByKey('image')
+		...uni.$uv?.props?.image
 	}
 }

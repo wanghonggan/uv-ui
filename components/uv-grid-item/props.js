@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 宫格的name
@@ -12,6 +10,6 @@ export default {
 			type: String,
 			default: 'transparent'
 		},
-		...getPropsByKey('gridItem')
+		...uni.$uv?.props?.gridItem
 	}
 }

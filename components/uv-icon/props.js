@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 图标类名
@@ -87,6 +85,6 @@ export default {
 			type: Boolean,
 			default: false
 		},
-		...getPropsByKey('icon')
+		...uni.$uv?.props?.icon
 	}
 }

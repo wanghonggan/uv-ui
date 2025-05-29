@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 列表锚点文本内容
@@ -27,6 +25,6 @@ export default {
 			type: [String, Number],
 			default: 32
 		},
-		...getPropsByKey('indexAnchor')
+		...uni.$uv?.props?.indexAnchor
 	}
 }

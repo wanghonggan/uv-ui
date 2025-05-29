@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		value: {
@@ -110,6 +108,6 @@ export default {
 			type: [Object, String],
 			default: ''
 		},
-		...getPropsByKey('numberBox')
+		...uni.$uv?.props?.numberBox
 	}
 }

@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 文字颜色
@@ -37,6 +35,6 @@ export default {
 			type: String,
 			default: ''
 		},
-		...getPropsByKey('link')
+		...uni.$uv?.props?.link
 	}
 }

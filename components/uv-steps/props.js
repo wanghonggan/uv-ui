@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 排列方向
@@ -37,6 +35,6 @@ export default {
 			type: Boolean,
 			default: false
 		},
-		...getPropsByKey('steps')
+		...uni.$uv?.props?.steps
 	}
 }

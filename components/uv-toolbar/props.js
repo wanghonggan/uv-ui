@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 是否展示工具条
@@ -37,6 +35,6 @@ export default {
 			type: String,
 			default: ''
 		},
-		...getPropsByKey('toolbar')
+		...uni.$uv?.props?.toolbar
 	}
 }

@@ -676,6 +676,30 @@ function getHistoryPage(back = 0) {
 	return pages[len - 1 + back]
 }
 
+
+
+/**
+ * @description 修改uvui内置属性值
+ * @param {object} props 修改内置props属性
+ * @param {object} config 修改内置config属性
+ * @param {object} color 修改内置color属性
+ * @param {object} zIndex 修改内置zIndex属性
+ */
+function setConfig({
+	props = {},
+	config = {},
+	color = {},
+	zIndex = {}
+}) {
+	const {
+		deepMerge,
+	} = uni.$uv
+	uni.$uv.config = deepMerge(uni.$uv.config, config)
+	uni.$uv.props = deepMerge(uni.$uv.props, props)
+	uni.$uv.color = deepMerge(uni.$uv.color, color)
+	uni.$uv.zIndex = deepMerge(uni.$uv.zIndex, zIndex)
+}
+
 export {
 	range,
 	getPx,
@@ -705,5 +729,6 @@ export {
 	setProperty,
 	page,
 	pages,
-	getHistoryPage
+	getHistoryPage,
+	setConfig
 }

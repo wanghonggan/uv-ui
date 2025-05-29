@@ -1,12 +1,12 @@
 // 此版本发布于2024-01-24
-const version = '1.1.20-2025052902';
+const version = '1.1.20-2025052904';
 
 // 开发环境才提示，生产环境不会提示
 if (process.env.NODE_ENV === 'development') {
 	console.log(`\n %c uvui V${version} https://www.uvui.cn/ \n\n`, 'color: #ffffff; background: #3c9cff; padding:5px 0; border-radius: 5px;');
 }
 
-export const config = {
+export default {
     v: version,
     version,
     // 主题名称
@@ -30,50 +30,5 @@ export const config = {
         'uv-light-color': '#c0c4cc'
     },
 	// 默认单位，可以通过配置为rpx，那么在用于传入组件大小参数为数值时，就默认为rpx
-	unit: 'px',
-    // 组件默认配置
-    props: {
-        popup: {
-            mode: {
-                type: String,
-                default: 'bottom',
-            },
-            round: {
-                type: [Number, String],
-                default: 12,
-            },
-            zIndex: {
-                type: [String, Number],
-                default: 100,
-            },
-        },
-        overlay: {
-            zIndex: {
-                type: [String, Number],
-                default: 300,
-            },
-        },
-        textarea: {
-            maxlength: {
-                default: -1,
-            },
-        },
-        gap: {
-            bgColor: {
-                default: '#f8f8f8',
-            },
-            height: {
-                default: 10,
-            },
-        },
-    },
-    zIndex: 100,
-}
-
-export function setConfig(_config) {
-    Object.assign(config, _config)
-}
-
-export function getPropsByKey(key) {
-    return config.props[key]
+	unit: 'px'
 }

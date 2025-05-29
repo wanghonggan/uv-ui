@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 绑定的值
@@ -86,6 +84,6 @@ export default {
 			type: String,
 			default: 'left'
 		},
-		...getPropsByKey('radioGroup')
+		...uni.$uv?.props?.radioGroup
 	}
 }

@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 滑块的移动过渡时间，单位ms
@@ -68,6 +66,6 @@ export default {
 			type: String,
 			default: 'name'
 		},
-		...getPropsByKey('tabs')
+		...uni.$uv?.props?.tabs
 	}
 }

@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		color: {
@@ -31,6 +29,6 @@ export default {
 			type: Boolean,
 			default: false
 		},
-		...getPropsByKey('line')
+		...uni.$uv?.props?.line
 	}
 }

@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 标题
@@ -87,6 +85,6 @@ export default {
 			type: [Object, String],
 			default: ''
 		},
-		...getPropsByKey('modal')
+		...uni.$uv?.props?.modal
 	}
 }

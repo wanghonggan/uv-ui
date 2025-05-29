@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// input的label提示语
@@ -46,6 +44,6 @@ export default {
 			type: [String, Object],
 			default: ''
 		},
-		...getPropsByKey('formItem')
+		...uni.$uv?.props?.formItem
 	}
 }

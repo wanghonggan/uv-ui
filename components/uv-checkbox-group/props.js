@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 绑定的值
@@ -81,6 +79,6 @@ export default {
 			type: Boolean,
 			default: false
 		},
-		...getPropsByKey('checkboxGroup')
+		...uni.$uv?.props?.checkboxGroup
 	}
 }

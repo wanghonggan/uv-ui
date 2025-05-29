@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		value: {
@@ -80,6 +78,6 @@ export default {
 			type: Boolean,
 			default: true
 		},
-		...getPropsByKey('codeInput')
+		...uni.$uv?.props?.codeInput
 	}
 }

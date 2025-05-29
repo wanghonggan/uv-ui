@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 头像图片组
@@ -50,6 +48,6 @@ export default {
 			type: [Number, String],
 			default: 0
 		},
-		...getPropsByKey('avatarGroup')
+		...uni.$uv?.props?.avatarGroup
 	}
 }

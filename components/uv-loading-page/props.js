@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 提示内容
@@ -52,6 +50,6 @@ export default {
 			type: [String, Number],
 			default: 300
 		},
-		...getPropsByKey('loadingPage')
+		...uni.$uv?.props?.loadingPage
 	}
 }

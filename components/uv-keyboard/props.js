@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 键盘的类型，number-数字键盘，card-身份证键盘，car-车牌号键盘
@@ -92,6 +90,6 @@ export default {
 			type: Boolean,
 			default: false
 		},
-		...getPropsByKey('keyboard')
+		...uni.$uv?.props?.keyboard
 	}
 }

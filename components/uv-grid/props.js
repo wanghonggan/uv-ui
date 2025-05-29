@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 分成几列
@@ -17,6 +15,6 @@ export default {
 			type: String,
 			default: 'left'
 		},
-		...getPropsByKey('grid')
+		...uni.$uv?.props?.grid
 	}
 }

@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 轮播的长度
@@ -27,6 +25,6 @@ export default {
 			type: String,
 			default: ''
 		},
-		...getPropsByKey('swiperIndicator')
+		...uni.$uv?.props?.swiperIndicator
 	}
 }

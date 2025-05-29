@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 是否展示骨架组件
@@ -62,6 +60,6 @@ export default {
 			type: String,
 			default: 'circle'
 		},
-		...getPropsByKey('skeleton')
+		...uni.$uv?.props?.skeleton
 	}
 }

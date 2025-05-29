@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 倒计时总秒数
@@ -32,6 +30,6 @@ export default {
 			type: String,
 			default: ''
 		},
-		...getPropsByKey('code')
+		...uni.$uv?.props?.code
 	}
 }

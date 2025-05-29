@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 是否展示组件
@@ -28,6 +26,6 @@ export default {
 			type: String,
 			default: ''
 		},
-		...getPropsByKey('transition')
+		...uni.$uv?.props?.transition
 	}
 }

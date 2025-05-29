@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 列表数组，元素可为字符串，如为对象可通过keyName指定目标属性名
@@ -133,6 +131,6 @@ export default {
 			type: [Object, String],
 			default: ''
 		},
-		...getPropsByKey('swiper')
+		...uni.$uv?.props?.swiper
 	}
 }

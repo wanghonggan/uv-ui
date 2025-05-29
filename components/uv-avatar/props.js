@@ -1,6 +1,4 @@
 import { range } from '../../libs/function/test.js'
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 头像图片路径(不能为相对路径)
@@ -77,6 +75,6 @@ export default {
 			type: String,
 			default: ''
 		},
-		...getPropsByKey('avatar')
+		...uni.$uv?.props?.avatar
 	}
 }

@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 组件状态，loadmore-加载前的状态，loading-加载中的状态，nomore-没有更多的状态
@@ -92,6 +90,6 @@ export default {
 			type: Boolean,
 			default: false
 		},
-		...getPropsByKey('loadmore')
+		...uni.$uv?.props?.loadmore
 	}
 }

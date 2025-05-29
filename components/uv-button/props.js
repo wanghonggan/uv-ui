@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 是否细边框
@@ -160,6 +158,6 @@ export default {
 			type: [Object,String],
 			default: ''
 		},
-		...getPropsByKey('button')
+		...uni.$uv?.props?.button
 	}
 }

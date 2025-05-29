@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 是否显示遮罩
@@ -22,6 +20,6 @@ export default {
 			type: [String, Number],
 			default: 0.5
 		},
-		...getPropsByKey('overlay')
+		...uni.$uv?.props?.overlay
 	}
 }

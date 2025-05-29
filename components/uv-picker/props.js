@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 是否展示顶部的操作栏
@@ -92,6 +90,6 @@ export default {
 			type: Boolean,
 			default: true
 		},
-		...getPropsByKey('picker')
+		...uni.$uv?.props?.picker
 	}
 }

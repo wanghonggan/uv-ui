@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 显示的内容，数组
@@ -73,6 +71,6 @@ export default {
 			type: Boolean,
 			default: false
 		},
-		...getPropsByKey('noticeBar')
+		...uni.$uv?.props?.noticeBar
 	}
 }

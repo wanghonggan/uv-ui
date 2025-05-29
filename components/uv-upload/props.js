@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 接受的文件类型, 可选值为all media image file video
@@ -127,6 +125,6 @@ export default {
 			type: Boolean,
 			default: true
 		},
-		...getPropsByKey('upload')
+		...uni.$uv?.props?.upload
 	}
 }

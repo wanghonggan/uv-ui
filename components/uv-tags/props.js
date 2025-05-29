@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 标签类型info、primary、success、warning、error
@@ -92,6 +90,6 @@ export default {
 			type: Boolean,
 			default: false
 		},
-		...getPropsByKey('tags')
+		...uni.$uv?.props?.tags
 	}
 }

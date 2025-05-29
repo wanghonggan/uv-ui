@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 返回顶部的形状，circle-圆形，square-方形
@@ -55,6 +53,6 @@ export default {
 				fontSize: '19px'
 			})
 		},
-		...getPropsByKey('backtop')
+		...uni.$uv?.props?.backtop
 	}
 }

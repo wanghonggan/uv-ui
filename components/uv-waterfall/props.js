@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 瀑布流数据
@@ -66,6 +64,6 @@ export default {
 			type: [Number, String],
 			default: ''
 		},
-		...getPropsByKey('waterfall'),
+		...uni.$uv?.props?.waterfall
 	}
 }

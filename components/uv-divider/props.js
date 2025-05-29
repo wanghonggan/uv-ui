@@ -1,5 +1,3 @@
-import { getPropsByKey } from "../../libs/config/config";
-
 export default {
 	props: {
 		// 是否虚线
@@ -42,6 +40,6 @@ export default {
 			type: String,
 			default: '#dcdfe6'
 		},
-		...getPropsByKey('divider')
+		...uni.$uv?.props?.divider
 	}
 }
