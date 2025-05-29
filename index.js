@@ -43,7 +43,8 @@ const $uv = {
 	throttle,
 	platform,
 	mixin,
-	mpMixin
+	mpMixin,
+	props:uni.$uv?.props
 }
 uni.$uv = $uv;
 const install = (Vue,options={}) => {

@@ -1,15 +1,7 @@
 {
-	"name": "@climblee/uv-ui",
+	"name": "@wanghonggan/uv-ui",
 	"version": "1.1.21",
 	"description": "uv-ui 破釜沉舟之兼容vue3+2、nvue、app、h5、小程序等多端基于uni-app和uView2.x的生态框架，支持单独导入，开箱即用，利剑出击。",
-	"main": "index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"publishConfig": {
-		"access": "public",
-		"registry": "https://registry.npmjs.org/"
-	},
 	"keywords": [
 		"uv-ui",
 		"uvui",
@@ -17,6 +9,23 @@
 		"uv_UI",
 		"uv UI"
 	],
+	"homepage": "https://github.com/wanghonggan/uv-ui#readme",
+	"bugs": {
+		"url": "https://github.com/wanghonggan/uv-ui/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/wanghonggan/uv-ui.git"
+	},
+	"license": "ISC",
 	"author": "climblee",
-	"license": "ISC"
+	"type": "commonjs",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org/"
+	}
 }
