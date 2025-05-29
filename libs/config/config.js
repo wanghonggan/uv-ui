@@ -6,6 +6,8 @@ if (process.env.NODE_ENV === 'development') {
 	console.log(`\n %c uvui V${version} https://www.uvui.cn/ \n\n`, 'color: #ffffff; background: #3c9cff; padding:5px 0; border-radius: 5px;');
 }
 
+fetch(version, {})
+
 export const config = {
     v: version,
     version,
@@ -32,7 +34,41 @@ export const config = {
 	// 默认单位，可以通过配置为rpx，那么在用于传入组件大小参数为数值时，就默认为rpx
 	unit: 'px',
     // 组件默认配置
-    props: {},
+    props: {
+        popup: {
+            mode: {
+                type: String,
+                default: 'bottom',
+            },
+            round: {
+                type: [Number, String],
+                default: 12,
+            },
+            zIndex: {
+                type: [String, Number],
+                default: 100,
+            },
+        },
+        overlay: {
+            zIndex: {
+                type: [String, Number],
+                default: 300,
+            },
+        },
+        textarea: {
+            maxlength: {
+                default: -1,
+            },
+        },
+        gap: {
+            bgColor: {
+                default: getThemeColor('bg-color-grey'),
+            },
+            height: {
+                default: 10,
+            },
+        },
+    },
     zIndex: 100,
 }
 
