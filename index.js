@@ -44,7 +44,7 @@ const $uv = {
 	platform,
 	mixin,
 	mpMixin,
-	props:uni.$uv?.props
+	props:uni.uvProps||{}
 }
 uni.$uv = $uv;
 const install = (Vue,options={}) => {
