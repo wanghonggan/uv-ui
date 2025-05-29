@@ -1,8 +1,0 @@
-.idea
-.hbuilderx
-unpackage/debug
-unpackage/dist
-unpackage/release
-unpackage/cache
-!unpackage/res
-**/node_modules
