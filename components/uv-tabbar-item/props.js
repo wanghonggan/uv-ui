@@ -1,4 +1,4 @@
-import { config } from "../../libs/config/config";
+import { getPropsByKey } from "../../libs/config/config";
 
 export default {
 	props: {
@@ -37,6 +37,6 @@ export default {
 			type: [Object, String],
 			default: 'top: 6px;right:2px;'
 		},
-		...config.props.tabbarItem
+		...getPropsByKey('tabbarItem')
 	}
 }

@@ -1,6 +1,4 @@
 // 此版本发布于2024-01-24
-import * as index from "../function";
-
 const version = '1.1.20';
 
 // 开发环境才提示，生产环境不会提示
@@ -40,4 +38,8 @@ export const config = {
 
 export function setConfig(_config) {
     Object.assign(config, _config)
+}
+
+export function getPropsByKey(key) {
+    return config.props[key]
 }

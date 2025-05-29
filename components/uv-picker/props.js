@@ -1,4 +1,4 @@
-import { config } from "../../libs/config/config";
+import { getPropsByKey } from "../../libs/config/config";
 
 export default {
 	props: {
@@ -92,6 +92,6 @@ export default {
 			type: Boolean,
 			default: true
 		},
-		...config.props.picker
+		...getPropsByKey('picker')
 	}
 }

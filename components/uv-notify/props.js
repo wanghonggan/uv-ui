@@ -1,4 +1,4 @@
-import { config } from "../../libs/config/config";
+import { getPropsByKey } from "../../libs/config/config";
 
 export default {
 	props: {
@@ -42,6 +42,6 @@ export default {
 			type: Boolean,
 			default: false
 		},
-		...config.props.notify
+		...getPropsByKey('notify')
 	}
 }

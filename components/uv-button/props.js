@@ -1,4 +1,4 @@
-import { config } from "../../libs/config/config";
+import { getPropsByKey } from "../../libs/config/config";
 
 export default {
 	props: {
@@ -160,6 +160,6 @@ export default {
 			type: [Object,String],
 			default: ''
 		},
-		...config.props.button
+		...getPropsByKey('button')
 	}
 }

@@ -1,4 +1,4 @@
-import { config } from "../../libs/config/config";
+import { getPropsByKey } from "../../libs/config/config";
 
 export default {
 	props: {
@@ -55,6 +55,6 @@ export default {
 			type: [String, Number],
 			default: 0
 		},
-		...config.props.switch
+		...getPropsByKey('switch')
 	}
 }

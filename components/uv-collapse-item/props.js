@@ -1,4 +1,4 @@
-import { config } from "../../libs/config/config";
+import { getPropsByKey } from "../../libs/config/config";
 
 export default {
 	props: {
@@ -57,6 +57,6 @@ export default {
 			type: Number,
 			default: 300
 		},
-		...config.props.collapseItem
+		...getPropsByKey('collapseItem')
 	}
 }

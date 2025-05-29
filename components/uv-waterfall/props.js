@@ -1,4 +1,4 @@
-import { config } from "../../libs/config/config";
+import { getPropsByKey } from "../../libs/config/config";
 
 export default {
 	props: {
@@ -66,6 +66,6 @@ export default {
 			type: [Number, String],
 			default: ''
 		},
-		...config.props.waterfall,
+		...getPropsByKey('waterfall'),
 	}
 }

@@ -1,4 +1,4 @@
-import { config } from "../../libs/config/config";
+import { getPropsByKey } from "../../libs/config/config";
 
 export default {
 	props: {
@@ -57,6 +57,6 @@ export default {
 			type: String,
 			default: ''
 		},
-		...config.props.countTo
+		...getPropsByKey('countTo')
 	}
 }
