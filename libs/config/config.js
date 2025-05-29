@@ -60,7 +60,7 @@ export const config = {
         },
         gap: {
             bgColor: {
-                default: getThemeColor('bg-color-grey'),
+                default: '#f8f8f8',
             },
             height: {
                 default: 10,
