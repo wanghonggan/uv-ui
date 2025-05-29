@@ -18,7 +18,7 @@
 		"url": "git+https://github.com/wanghonggan/uv-ui.git"
 	},
 	"license": "ISC",
-	"author": "climblee",
+	"author": "wanghonggan",
 	"type": "commonjs",
 	"main": "index.js",
 	"scripts": {
