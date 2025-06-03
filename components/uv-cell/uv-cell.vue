@@ -104,6 +104,7 @@
 	$uv-cell-padding: 10px 15px !default;
 	$uv-cell-font-size: 15px !default;
 	$uv-cell-line-height: 24px !default;
+	$uv-cell-min-height: 30px !default;
 	$uv-cell-color: $uv-main-color !default;
 	$uv-cell-icon-size: 16px !default;
 	$uv-cell-title-font-size: 15px !default;
@@ -134,6 +135,7 @@
 			padding: $uv-cell-padding;
 			font-size: $uv-cell-font-size;
 			color: $uv-cell-color;
+      min-height: $uv-cell-min-height;
 			&__content {
 				@include flex(row);
 				align-items: center;
