@@ -104,7 +104,7 @@
 	$uv-cell-padding: 10px 15px !default;
 	$uv-cell-font-size: 15px !default;
 	$uv-cell-line-height: 24px !default;
-	$uv-cell-min-height: 30px !default;
+	$uv-cell-min-height: 50px !default;
 	$uv-cell-color: $uv-main-color !default;
 	$uv-cell-icon-size: 16px !default;
 	$uv-cell-title-font-size: 15px !default;
