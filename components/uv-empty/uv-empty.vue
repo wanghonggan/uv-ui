@@ -20,10 +20,12 @@
 		  :src="icon"
 		  mode="widthFix"
 		></image>
-		<text
-		  class="uv-empty__text"
-		  :style="[textStyle]"
-		>{{text ? text : icons[mode]}}</text>
+		<slot name="text">
+      <text
+          class="uv-empty__text"
+          :style="[textStyle]"
+      >{{text ? text : icons[mode]}}</text>
+    </slot>
 		<view class="uv-empty__wrap">
 			<slot />
 		</view>
