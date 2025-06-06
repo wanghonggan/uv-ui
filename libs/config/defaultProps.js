@@ -38,12 +38,12 @@ export default {
         //  图标宽度，单位px
         width: {
             type: [String, Number],
-            default: 90
+            default: 110
         },
         // 图标高度，单位px
         height: {
             type: [String, Number],
-            default: 90
+            default: 110
         },
     }
 }
