@@ -3,34 +3,47 @@ export default {
     popup: {
         mode: {
             type: String,
-        default: 'bottom',
+            default: 'bottom',
         },
         round: {
             type: [Number, String],
-        default: 12,
+            default: 12,
         },
         zIndex: {
             type: [String, Number],
-        default: 100,
+            default: 100,
         },
     },
     overlay: {
         zIndex: {
             type: [String, Number],
-        default: 300,
+            default: 300,
         },
     },
     textarea: {
         maxlength: {
-        default: -1,
+            type: [String, Number],
+            default: -1
         },
     },
     gap: {
         bgColor: {
-        default: '#f2f2f2',
+            default: '#f2f2f2',
         },
         height: {
-        default: 10,
+            default: 10,
         },
     },
+    empty: {
+        //  图标宽度，单位px
+        width: {
+            type: [String, Number],
+            default: 90
+        },
+        // 图标高度，单位px
+        height: {
+            type: [String, Number],
+            default: 90
+        },
+    }
 }
