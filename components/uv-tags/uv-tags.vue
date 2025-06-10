@@ -184,6 +184,7 @@
 		&__text {
 			&--micro {
 				font-size: 9px;
+        white-space: nowrap !important
 			}
 
       &--mini {
