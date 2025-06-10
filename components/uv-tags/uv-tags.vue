@@ -184,7 +184,6 @@
 		&__text {
 			&--micro {
 				font-size: 9px;
-				line-height: 9px;
 			}
 
       &--mini {
