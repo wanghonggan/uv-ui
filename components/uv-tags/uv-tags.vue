@@ -184,7 +184,6 @@
 		&__text {
 			&--micro {
 				font-size: 9px;
-        white-space: nowrap !important
 			}
 
       &--mini {
@@ -207,6 +206,7 @@
       height: 12px;
       line-height: 12px;
       padding: 0 3px;
+      white-space: nowrap;
       &--right {
         padding-right: 2px;
       }
