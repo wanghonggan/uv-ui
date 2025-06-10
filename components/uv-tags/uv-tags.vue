@@ -79,7 +79,7 @@
 	 * @tutorial https://www.uvui.cn/components/tag.html
 	 * @property {String}			type		标签类型info、primary、success、warning、error （默认 'primary' ）
 	 * @property {Boolean | String}	disabled	不可用（默认 false ）
-	 * @property {String}			size		标签的大小，large，medium，mini （默认 'medium' ）
+	 * @property {String}			size		标签的大小，large，medium，mini （默认 'medium' ） micro
 	 * @property {String}			shape		tag的形状，circle（两边半圆形）, square（方形，带圆角）（默认 'square' ）
 	 * @property {String | Number}	text		标签的文字内容 
 	 * @property {String}			bgColor		背景颜色，默认为空字符串，即不处理
@@ -182,7 +182,12 @@
 		}
 
 		&__text {
-			&--mini {
+			&--micro {
+				font-size: 9px;
+				line-height: 9px;
+			}
+
+      &--mini {
 				font-size: 12px;
 				line-height: 12px;
 			}
@@ -197,6 +202,15 @@
 				line-height: 15px;
 			}
 		}
+
+    &--micro {
+      height: 12px;
+      line-height: 12px;
+      padding: 0 3px;
+      &--right {
+        padding-right: 2px;
+      }
+    }
 
 		&--mini {
 			height: 22px;
@@ -359,6 +373,11 @@
 				transform: scale(0.6) translate(50%, -50%);
 				/* #endif */
 			}
+      &--micro {
+        width: 12px;
+        height: 12px;
+      }
+
 			&--mini {
 				width: 18px;
 				height: 18px;
