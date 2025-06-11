@@ -34,7 +34,6 @@
 			  :disabled="disabled"
 			  @focus="getFocus"
 			  :focus="focus"
-        :auto-focus="focus"
 			  :maxlength="maxlength"
 			  placeholder-class="uv-search__content__input--placeholder"
 			  :placeholder="placeholder"
@@ -118,7 +117,6 @@
 		data() {
 			return {
 				keyword: '',
-				showClear: false, // 是否显示右边的清除图标
 				show: false,
 				// 标记input当前状态是否处于聚焦中，如果是，才会显示右侧的清除控件
 				focused: this.focus
@@ -190,11 +188,8 @@
 			},
 			// 失去焦点
 			blur() {
-				// 最开始使用的是监听图标@touchstart事件，自从hx2.8.4后，此方法在微信小程序出错
-				// 这里改为监听点击事件，手点击清除图标时，同时也发生了@blur事件，导致图标消失而无法点击，这里做一个延时
-				setTimeout(() => {
-					this.focused = false;
-				}, 100)
+        this.focused = false;
+
 				this.show = false;
 				this.$emit('blur', this.keyword);
 			},
