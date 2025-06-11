@@ -49,7 +49,7 @@
 			/>
 			<view
 			  class="uv-search__content__icon uv-search__content__close"
-			  v-if="keyword && clearabled && focused"
+			  v-if="keyword && clearabled"
 			  @tap="clear"
 			>
 				<uv-icon
@@ -118,8 +118,6 @@
 			return {
 				keyword: '',
 				show: false,
-				// 标记input当前状态是否处于聚焦中，如果是，才会显示右侧的清除控件
-				focused: this.focus
 			};
 		},
 		created() {
@@ -184,14 +182,9 @@
 				// 开启右侧搜索按钮展开的动画效果
 				if (this.animation && this.showAction) this.show = true;
 				this.$emit('focus', this.keyword);
-
-        this.$nextTick(() => this.focused = true)
 			},
 			// 失去焦点
 			blur() {
-				// 最开始使用的是监听图标@touchstart事件，自从hx2.8.4后，此方法在微信小程序出错
-				// 这里改为监听点击事件，手点击清除图标时，同时也发生了@blur事件，导致图标消失而无法点击，这里做一个延时
-        this.$nextTick(() => this.focused = false)
         this.show = false;
 				this.$emit('blur', this.keyword);
 			},
