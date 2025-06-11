@@ -34,6 +34,7 @@
 			  :disabled="disabled"
 			  @focus="getFocus"
 			  :focus="focus"
+        :auto-focus="focus"
 			  :maxlength="maxlength"
 			  placeholder-class="uv-search__content__input--placeholder"
 			  :placeholder="placeholder"
