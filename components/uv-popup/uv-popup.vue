@@ -65,6 +65,7 @@
 	// #endif
 	import mpMixin from '../../libs/mixin/mpMixin.js'
 	import mixin from '../../libs/mixin/mixin.js'
+  import defaultProps from "../../libs/config/defaultProps";
 	/**
 	* PopUp 弹出层
 	* @description 弹出层组件，为了解决遮罩弹层的问题
@@ -179,7 +180,7 @@
 				type: [Number, String],
 				default: 0
 			},
-			...uni.$uv?.props?.popup
+			...defaultProps.notify
 		},
 		watch: {
 			/**
