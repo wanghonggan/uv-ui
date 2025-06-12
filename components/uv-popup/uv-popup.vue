@@ -180,7 +180,7 @@
 				type: [Number, String],
 				default: 0
 			},
-			...defaultProps.notify
+			...defaultProps.popup
 		},
 		watch: {
 			/**
