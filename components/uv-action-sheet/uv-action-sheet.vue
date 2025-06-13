@@ -6,6 +6,7 @@
 	  :safeAreaInsetBottom="safeAreaInsetBottom"
 	  :round="round"
 		:close-on-click-overlay="closeOnClickOverlay"
+    :z-index="zIndex"
 		@change="popupChange"
 	>
 		<view class="uv-action-sheet">

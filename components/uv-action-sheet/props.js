@@ -47,6 +47,16 @@ export default {
 			type: [Boolean, String, Number],
 			default: 0
 		},
+		// 层级
+		zIndex: {
+			type: [String, Number],
+			// #ifdef H5
+			default: 997
+			// #endif
+			// #ifndef H5
+			default: 10075
+			// #endif
+		},
 		...defaultProps.actionSheet,
 	}
 }
