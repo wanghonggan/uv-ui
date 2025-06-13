@@ -190,7 +190,7 @@
 				// 支付宝小程序不支持provide/inject，所以使用这个方法获取整个父组件，在created定义，避免循环引用
 				this.updateParentData()
 				if (!this.parent) {
-					this.$uv.error('uv-checkbox必须搭配uv-checkbox-group组件使用')
+          this.parentData.modelValue = []
 				}
 				this.$nextTick(()=>{
 					let parentValue = [];

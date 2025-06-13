@@ -8,7 +8,7 @@
 			<view
 				class="uv-tags"
 				:class="[`uv-tags--${shape}`, !plain && `uv-tags--${type}`, plain && `uv-tags--${type}--plain`, `uv-tags--${size}`,`uv-tags--${size}--${closePlace}`, plain && plainFill && `uv-tags--${type}--plain--fill`]"
-				@tap.stop="clickHandler"
+				@tap="clickHandler"
 				:style="[{
 					marginRight: closable&& closePlace=='right-top' ? '10px' : 0,
 					marginTop: closable && closePlace=='right-top' ? '10px' : 0,
