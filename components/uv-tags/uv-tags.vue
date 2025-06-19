@@ -239,6 +239,14 @@
 			}
 		}
 
+    &--freeze {
+      border-width: 1px;
+    }
+
+    &--freeze--plain {
+      border-width: 1px;
+    }
+
 		&--primary {
 			background-color: $uv-primary;
 			border-width: 1px;
