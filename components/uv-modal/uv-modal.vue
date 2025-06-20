@@ -5,7 +5,7 @@
 		:zoom="zoom"
     :zIndex="zIndex"
 		:customStyle="{
-			borderRadius: '6px', 
+			borderRadius: '12px',
 			overflow: 'hidden',
 			marginTop: `-${$uv.addUnit(negativeTop)}`
 		}"
@@ -26,12 +26,10 @@
 			>{{ title }}</text>
 			<view
 				class="uv-modal__content"
-				:style="{
-					paddingTop: `${title ? 12 : 25}px`
-				}"
+				:style="title?'padding-top: 0':''"
 			>
 				<slot>
-					<text 
+					<text
 						class="uv-modal__content__text"
 						:style="[
 							{
@@ -116,7 +114,7 @@
 	 * @property {Boolean}			closeOnClickOverlay	是否允许点击遮罩关闭该组件 （默认 true ）
 	 * @property {String | Number}	negativeTop			往上偏移的值，给一个负的margin-top，往上偏移，避免和键盘重合的情况，单位任意，数值则默认为px单位 （默认 0 ）
 	 * @property {String | Number}	width				modal宽度，不支持百分比，可以数值，px，rpx单位 （默认 '650rpx' ）
-	 * @property {String} align 文本对齐方式 （默认'left'） 
+	 * @property {String} align 文本对齐方式 （默认'left'）
 	 * @property {String | Object} textStyle 文本扩展样式
 	 * @event {Function} confirm	点击确认按钮时触发
 	 * @event {Function} cancel		点击取消按钮时触发
@@ -187,20 +185,20 @@
 		width: 650rpx;
 		border-radius: $uv-modal-border-radius;
 		overflow: hidden;
-	
+
 		&__title {
 			font-size: 16px;
 			font-weight: bold;
 			color: $uv-content-color;
 			text-align: center;
-			padding-top: 25px;
+			padding: 10px 0;
 		}
-	
+
 		&__content {
-			padding: 12px 25px 25px 25px;
+			padding: 10px 15px;
 			@include flex;
 			justify-content: center;
-	
+
 			&__text {
 				line-height: 48rpx;
 				font-size: 15px;
@@ -208,32 +206,32 @@
 				flex: 1;
 			}
 		}
-	
+
 		&__button-group {
 			@include flex;
 			height: 48px;
-	
+
 			&__wrapper {
 				flex: 1;
 				@include flex;
 				justify-content: center;
 				align-items: center;
 				height: 48px;
-				
+
 				&--confirm,
 				&--only-cancel {
 					border-bottom-right-radius: $uv-modal-border-radius;
 				}
-				
+
 				&--cancel,
 				&--only-confirm {
 					border-bottom-left-radius: $uv-modal-border-radius;
 				}
-	
+
 				&--hover {
 					background-color: $uv-bg-color;
 				}
-	
+
 				&__text {
 					color: $uv-content-color;
 					font-size: 16px;
