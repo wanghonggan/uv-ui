@@ -9,10 +9,6 @@ export default {
             type: [Number, String],
             default: 12,
         },
-        zIndex: {
-            type: [String, Number],
-            default: 100,
-        },
     },
     overlay: {
         zIndex: {
