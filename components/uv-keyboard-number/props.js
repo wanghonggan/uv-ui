@@ -15,7 +15,7 @@ export default {
 		// 是否显示键盘的"-"符号
 		minusDisabled: {
 			type: Boolean,
-			default: true
+			default: false
 		},
 		// 是否打乱键盘按键的顺序
 		random: {

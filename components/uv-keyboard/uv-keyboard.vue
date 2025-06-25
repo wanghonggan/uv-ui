@@ -50,6 +50,7 @@
 				  @change="change"
 				  :mode="mode"
 				  :dotDisabled="dotDisabled"
+          :minus-disabled="minusDisabled"
 				></uv-keyboard-number>
 			</template>
 			<template v-else>

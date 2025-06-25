@@ -7,8 +7,13 @@ export default {
 			type: String,
 			default: 'number'
 		},
-		// 是否显示键盘的"."符号
+		// 是否禁用键盘的"."符号
 		dotDisabled: {
+			type: Boolean,
+			default: false
+		},
+		// 是否禁用键盘的"-"符号
+		minusDisabled: {
 			type: Boolean,
 			default: false
 		},
