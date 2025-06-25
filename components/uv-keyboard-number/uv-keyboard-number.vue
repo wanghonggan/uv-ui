@@ -98,12 +98,12 @@
 					let style = {};
 
           if(this.mode === 'number'){
-            if (this.dotDisabled && this.minusDisabled && index == 9) {
+            if (this.dotDisabled && this.minusDisabled && index === 9) {
               style.width = '464rpx'
             }
 
-            if (!this.dotDisabled && !this.minusDisabled && (index == 9||index==10||index==11)) {
-              style.width = '154rpx'
+            if (!this.dotDisabled && !this.minusDisabled && index >= 9) {
+              style.width = '116rpx'
             }
           }
 
