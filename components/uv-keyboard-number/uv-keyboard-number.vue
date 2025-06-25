@@ -103,7 +103,7 @@
             }
 
             if (!this.dotDisabled && !this.minusDisabled && index >= 9) {
-              style.width = '116rpx'
+              style.width = '140rpx'
             }
           }
 

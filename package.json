@@ -1,6 +1,6 @@
 {
 	"name": "@wanghonggan/uv-ui",
-	"version": "1.1.20-2025062503",
+	"version": "1.1.20-2025062504",
 	"description": "uv-ui 破釜沉舟之兼容vue3+2、nvue、app、h5、小程序等多端基于uni-app和uView2.x的生态框架，支持单独导入，开箱即用，利剑出击。",
 	"keywords": [
 		"uv-ui",
