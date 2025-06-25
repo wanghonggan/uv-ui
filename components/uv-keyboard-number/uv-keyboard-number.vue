@@ -60,6 +60,7 @@
 			return {
 				backspace: 'backspace', // 退格键内容
 				dot: '.', // 点
+				minus: '-', // 点
 				timer: null, // 长按多次删除的事件监听
 				cardX: 'X' // 身份证的X符号
 			};
@@ -67,24 +68,27 @@
 		computed: {
 			// 键盘需要显示的内容
 			numList() {
-				let tmp = [];
-				if (this.dotDisabled && this.mode == 'number') {
+        const tmp = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+				if ( this.mode === 'number') {
+
+          if(!this.minusDisabled){
+            tmp.push(this.minus);
+          }
+          if(!this.dotDisabled){
+            tmp.push(this.dot);
+          }
+          tmp.push(0)
+
 					if (!this.random) {
-						return [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+						return tmp;
 					} else {
-						return this.$uv.randomArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]);
+						return this.$uv.randomArray(tmp);
 					}
-				} else if (!this.dotDisabled && this.mode == 'number') {
+				}  else if (this.mode === 'card') {
 					if (!this.random) {
-						return [1, 2, 3, 4, 5, 6, 7, 8, 9, this.dot, 0];
+						return [...tmp, this.cardX, 0];
 					} else {
-						return this.$uv.randomArray([1, 2, 3, 4, 5, 6, 7, 8, 9, this.dot, 0]);
-					}
-				} else if (this.mode == 'card') {
-					if (!this.random) {
-						return [1, 2, 3, 4, 5, 6, 7, 8, 9, this.cardX, 0];
-					} else {
-						return this.$uv.randomArray([1, 2, 3, 4, 5, 6, 7, 8, 9, this.cardX, 0]);
+						return this.$uv.randomArray([...tmp, this.cardX, 0]);
 					}
 				}
 			},
@@ -92,7 +96,17 @@
 			itemStyle() {
 				return index => {
 					let style = {};
-					if (this.mode == 'number' && this.dotDisabled && index == 9) style.width = '464rpx';
+
+          if(this.mode === 'number'){
+            if (this.dotDisabled && this.minusDisabled && index == 9) {
+              style.width = '464rpx'
+            }
+
+            if (!this.dotDisabled && !this.minusDisabled && (index == 9||index==10||index==11)) {
+              style.width = '154rpx'
+            }
+          }
+
 					return style;
 				};
 			},
