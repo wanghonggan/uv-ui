@@ -41,5 +41,11 @@ export default {
             type: [String, Number],
             default: 110
         },
+    },
+    modal:{
+        width: {
+            type: [String, Number],
+            default: '70vw'
+        },
     }
 }
