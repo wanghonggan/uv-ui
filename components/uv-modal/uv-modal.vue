@@ -26,7 +26,7 @@
 			>{{ title }}</text>
 			<view
 				class="uv-modal__content"
-				:style="title?'padding-top: 0':''"
+				:style="title?'padding-top: 5px':''"
 			>
 				<slot>
 					<text
