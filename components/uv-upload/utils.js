@@ -73,13 +73,23 @@ export function chooseFile({
     return new Promise((resolve, reject) => {
         switch (accept) {
         case 'image':
-            uni.chooseImage({
-                count: multiple ? Math.min(maxCount, 9) : 1,
-                sourceType: capture,
-                sizeType,
-                success: (res) => resolve(formatImage(res)),
-                fail: reject
-            })
+            if (uni.qy) {
+                uni.chooseFile({
+                    count: multiple ? maxCount : 1,
+                    type: 'image',
+                    success: (res) => resolve(formatFile(res)),
+                    fail: reject
+                })
+                return
+            }else{
+                uni.chooseImage({
+                    count: multiple ? Math.min(maxCount, 9) : 1,
+                    sourceType: capture,
+                    sizeType,
+                    success: (res) => resolve(formatImage(res)),
+                    fail: reject
+                });
+            }
             break
             // #ifdef MP-WEIXIN
             // 只有微信小程序才支持chooseMedia接口
