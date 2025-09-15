@@ -73,7 +73,7 @@ export function chooseFile({
     return new Promise((resolve, reject) => {
         switch (accept) {
         case 'image':
-            if (!uni.chooseImage) {
+            if (uni.chooseFile) {
                 uni.chooseFile({
                     count: multiple ? maxCount : 1,
                     type: 'image',
