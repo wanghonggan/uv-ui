@@ -190,7 +190,7 @@
           if (!item.type) return this.$uv.test.video(this.getSource(item)) ? 'video' : 'image'
           if (item.type === 'image') return 'image'
           if (item.type === 'video') return 'video'
-          return 'image'
+          return 'custom'
         }
       },
 			// 获取目标路径，可能数组中为字符串，对象的形式，额外可指定对象的目标属性名keyName
