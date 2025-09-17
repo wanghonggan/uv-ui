@@ -143,6 +143,10 @@ export default {
 			type: [Object, String],
 			default: ''
 		},
+		showMenuByLongpress:{
+			type: Boolean,
+			default: false
+		},
 		...defaultProps.swiper
 	}
 }

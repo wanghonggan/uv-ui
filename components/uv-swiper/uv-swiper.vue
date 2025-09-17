@@ -49,6 +49,7 @@
 						v-if="getItemType(item) === 'image'"
 						:src="getSource(item)"
 						:mode="imgMode"
+            :show-menu-by-longpress="showMenuByLongpress"
 						@tap="clickHandler(index)"
 						:style="{
 							height: $uv.addUnit(height),
@@ -285,6 +286,7 @@
 						color: #FFFFFF;
 						flex: 1;
 					}
+
           &__tips{
             position: absolute;
             background-color: $uv-primary;
