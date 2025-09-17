@@ -76,8 +76,9 @@
 					>{{ item.title }}</text>
 
           <text
-              v-if="item.tips"
+              v-if="showTips && $uv.test.object(item) && item.tips"
               class="uv-swiper__wrapper__item__wrapper__tips uv-line-1"
+              :style="[$uv.addStyle(tipsStyle)]"
               @click="tipsHandler(index)"
           >
             {{item.tips}}

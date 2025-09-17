@@ -133,6 +133,16 @@ export default {
 			type: [Object, String],
 			default: ''
 		},
+		// 是否显示右上角提示，要求数组对象中有tips属性
+		showTips: {
+			type: Boolean,
+			default: false
+		},
+		// 显示的提示样式
+		tipsStyle: {
+			type: [Object, String],
+			default: ''
+		},
 		...defaultProps.swiper
 	}
 }
