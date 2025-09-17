@@ -74,6 +74,15 @@
 						class="uv-swiper__wrapper__item__wrapper__title uv-line-1"
 						:style="[$uv.addStyle(titleStyle)]"
 					>{{ item.title }}</text>
+
+          <text
+              v-if="item.tips"
+              class="uv-swiper__wrapper__item__wrapper__tips uv-line-1"
+              @click="tipsHandler(index)"
+          >
+            {{item.tips}}
+          </text>
+
 				</view>
 			</swiper-item>
 		</swiper>
@@ -202,7 +211,11 @@
 			// 点击某个item
 			clickHandler(index) {
 				this.$emit('click', index)
-			}
+			},
+      // 点击某个item
+      tipsHandler(index) {
+        this.$emit('tips', index)
+      }
 		},
 	}
 </script>
@@ -211,7 +224,9 @@
 	$show-lines: 1;
 	@import '../../libs/css/variable.scss';
 	@import '../../libs/css/components.scss';
-	.uv-swiper {
+  @import '../../libs/css/color.scss';
+
+  .uv-swiper {
 		@include flex;
 		justify-content: center;
 		align-items: center;
@@ -251,6 +266,16 @@
 						color: #FFFFFF;
 						flex: 1;
 					}
+          &__tips{
+            position: absolute;
+            background-color: $uv-primary;
+            right: 0;
+            font-size: 9px;
+            color: #FFFFFF;
+            margin: 8px 10px;
+            padding: 4px 8px;
+            border-radius: 10px
+          }
 				}
 			}
 		}
