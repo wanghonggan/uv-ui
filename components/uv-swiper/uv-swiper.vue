@@ -57,7 +57,7 @@
 					></image>
 					<video
 						class="uv-swiper__wrapper__item__wrapper__video"
-						v-if="getItemType(item) === 'video'"
+						v-else-if="getItemType(item) === 'video'"
 						:id="`video-${index}`"
 						:enable-progress-gesture="false"
 						:src="getSource(item)"
@@ -69,6 +69,20 @@
 						controls
 						@tap="clickHandler(index)"
 					></video>
+
+          <view
+              v-else
+              class="uv-swiper__wrapper__item__wrapper__custom"
+              @tap="clickHandler(index)"
+              :style="{
+							height: $uv.addUnit(height),
+							borderRadius: $uv.addUnit(radius)
+						}"
+          >
+            <slot :item="item"></slot>
+          </view>
+
+
 					<text
 						v-if="showTitle && $uv.test.object(item) && item.title"
 						class="uv-swiper__wrapper__item__wrapper__title uv-line-1"
@@ -254,6 +268,10 @@
 					&__video {
 						flex: 1;
 					}
+
+          &__custom {
+            flex: 1;
+          }
 
 					&__title {
 						position: absolute;
