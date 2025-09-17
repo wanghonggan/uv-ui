@@ -79,7 +79,7 @@
 							borderRadius: $uv.addUnit(radius)
 						}"
           >
-            <slot :item="item"></slot>
+            <slot name="item" :item="item"></slot>
           </view>
 
 
