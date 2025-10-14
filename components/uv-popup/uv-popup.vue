@@ -420,7 +420,7 @@
 				this.showPopup = true
 				this.showTrans = true
 			},
-			left(type) {
+			left(type,style={}) {
 				this.popupClass = 'left'
 				this.ani = ['slide-left']
 				this.transitionStyle = {
@@ -430,7 +430,8 @@
 					bottom: 0,
 					top: 0,
 					backgroundColor: this.bg,
-					/* #ifndef APP-NVUE */
+          ...style,
+          /* #ifndef APP-NVUE */
 					display: 'flex',
 					flexDirection: 'column'
 					/* #endif */
@@ -440,7 +441,7 @@
 				this.showPopup = true
 				this.showTrans = true
 			},
-			right(type) {
+			right(type,style={}) {
 				this.popupClass = 'right'
 				this.ani = ['slide-right']
 				this.transitionStyle = {
@@ -450,7 +451,8 @@
 					right: 0,
 					top: 0,
 					backgroundColor: this.bg,
-					/* #ifndef APP-NVUE */
+          ...style,
+          /* #ifndef APP-NVUE */
 					display: 'flex',
 					flexDirection: 'column'
 					/* #endif */
