@@ -307,7 +307,7 @@
 				this.clearPropagation = true
 			},
 
-			open(direction) {
+			open(direction,style) {
 				// fix by mehaotian 处理快速打开关闭的情况
 				if (this.showPopup) {
 					return
@@ -321,7 +321,7 @@
 				if (!this.config[direction]) {
 					return this.$uv.error(`缺少类型：${direction}`);
 				}
-				this[this.config[direction]]()
+				this[this.config[direction]](null,style)
 				this.$emit('change', {
 					show: true,
 					type: direction
