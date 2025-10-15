@@ -70,7 +70,7 @@
 			:show="touching"
 			:customStyle="{
 				position: 'fixed',
-				right: '40px',
+				right: `calc(${$uv.addUnit(this.indexRight || 0 ,'px')} + 40px)`,
 				top: $uv.addUnit(indicatorTop,'px'),
 				zIndex: 2
 			}"
@@ -206,7 +206,7 @@
             this.touching = false
             this.setValueForTouch(index)
             this.$emit('select',this.activeIndex);
-          },50)
+          },300)
         }
       },
 			// 索引列表被触摸
