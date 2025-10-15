@@ -22,9 +22,14 @@ export default {
             default: -1
         },
     },
+    search:{
+        bgColor: {
+            default: '#f8f8f8',
+        },
+    },
     gap: {
         bgColor: {
-            default: '#f2f2f2',
+            default: '#f8f8f8',
         },
         height: {
             default: 10,

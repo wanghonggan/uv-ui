@@ -54,7 +54,8 @@
 				class="uv-index-list__letter__item"
 				v-for="(item, index) in uIndexList"
 				:key="index"
-				:style="{
+        @click="onClick(index)"
+        :style="{
 					backgroundColor: activeIndex === index ? activeColor : 'transparent'
 				}"
 			>
@@ -196,6 +197,11 @@
 				//解决当uv-index-list组件放在tabbar页面时,scroll-view内容较少时，还能滚动
 				this.scrollViewHeight = this.sys.windowHeight - this.$uv.getPx(this.customNavHeight)
 			},
+      onClick(index) {
+        if (['mac', 'windows'].includes(this.$uv.os())) {
+          this.setValueForTouch(index)
+        }
+      },
 			// 索引列表被触摸
 			touchStart(e) {
 				// 获取触摸点信息
