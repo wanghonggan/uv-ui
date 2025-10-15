@@ -44,7 +44,7 @@
 		<view
 			class="uv-index-list__letter"
 			ref="uv-index-list__letter"
-			:style="{ top: $uv.addUnit(letterInfo.top || 100 ,'px') }"
+			:style="{ top: $uv.addUnit(letterInfo.top || 100 ,'px'),right:$uv.addUnit(this.indexRight || 0 ,'px') }"
 			@touchstart="touchStart"
 			@touchmove.stop.prevent="touchMove"
 			@touchend.stop.prevent="touchEnd"
@@ -200,11 +200,13 @@
       onClick(index) {
         if (['mac', 'windows'].includes(this.$uv.os())) {
           this.touching = true
-          this.$nextTick(() => {
+          this.setValueForTouch(index)
+
+          setTimeout(()=>{
             this.touching = false
             this.setValueForTouch(index)
             this.$emit('select',this.activeIndex);
-          })
+          },50)
         }
       },
 			// 索引列表被触摸

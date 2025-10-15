@@ -27,6 +27,10 @@ export default {
 			type: [String, Number],
 			default: 0
 		},
+		indexRight: {
+			type: [String, Number],
+			default: 0
+		},
 		...defaultProps.indexList
 	}
 }
