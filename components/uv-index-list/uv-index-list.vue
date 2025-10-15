@@ -199,7 +199,12 @@
 			},
       onClick(index) {
         if (['mac', 'windows'].includes(this.$uv.os())) {
-          this.setValueForTouch(index)
+          this.touching = true
+          this.$nextTick(() => {
+            this.touching = false
+            this.setValueForTouch(index)
+            this.$emit('select',this.activeIndex);
+          })
         }
       },
 			// 索引列表被触摸
