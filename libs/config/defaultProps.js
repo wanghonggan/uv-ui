@@ -27,6 +27,11 @@ export default {
             default: '#f8f8f8',
         },
     },
+    indexAnchor:{
+        bgColor: {
+            default: '#f8f8f8',
+        },
+    },
     line:{
         color:{
             default: '#e8e8e8',
