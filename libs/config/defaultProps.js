@@ -29,7 +29,12 @@ export default {
     },
     line:{
         color:{
-            default: '#f8f8f8',
+            default: '#e8e8e8',
+        }
+    },
+    divider:{
+        lineColor:{
+            default: '#e8e8e8',
         }
     },
     gap: {
