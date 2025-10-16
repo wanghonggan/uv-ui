@@ -27,6 +27,11 @@ export default {
             default: '#f8f8f8',
         },
     },
+    line:{
+        color:{
+            default: '#f8f8f8',
+        }
+    },
     gap: {
         bgColor: {
             default: '#f8f8f8',
