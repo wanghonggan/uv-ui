@@ -59,8 +59,8 @@
 			}
 		},
 		methods: {
-			clickHandler() {
-				this.$emit('click')
+			clickHandler(e) {
+				this.$emit('click',e)
 			},
 			clear() {}
 		}
