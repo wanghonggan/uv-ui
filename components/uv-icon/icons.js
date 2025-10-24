@@ -133,6 +133,7 @@ export default {
 	"uvicon-share": "e616",
 	"uvicon-zhifubao-circle-fill": "e617",
 	"uvicon-trash": "e618",
+	"uvicon-volume": "e6e3",
 	"uvicon-volume-off": "e619",
 	"uvicon-weixin-circle-fill": "e61a",
 	"uvicon-weixin-fill": "e61b",
