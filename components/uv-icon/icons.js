@@ -1,6 +1,8 @@
 export default {
+	"uvicon-explain": "e62a",
+	"uvicon-feedback": "e69f",
+	"uvicon-log": "ebfa",
 	"uvicon-top": "e876",
-	"uvicon-date": "e62a",
 	"uvicon-setting-fill": "e69c",
 	"uvicon-setting": "e69d",
 	"uvicon-filter": "e69e",
