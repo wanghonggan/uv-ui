@@ -1,5 +1,7 @@
 export default {
-	"uvicon-explain": "e62a",
+	"uvicon-jinpai": "e600",
+	"uvicon-yinpai": "e62c",
+	"uvicon-tongpai": "e6a0",
 	"uvicon-feedback": "e69f",
 	"uvicon-log": "ebfa",
 	"uvicon-top": "e876",
