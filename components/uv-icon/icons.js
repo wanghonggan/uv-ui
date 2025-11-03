@@ -21,6 +21,7 @@ export default {
 	"uvicon-apple-fill": "e697",
 	"uvicon-arrow-leftward": "e698",
 	"uvicon-account": "e699",
+	"uvicon-account-fill": "e6a0",
 	"uvicon-arrow-down": "e69a",
 	"uvicon-arrow-down-fill": "e69b",
 	"uvicon-clock-fill": "e679",
