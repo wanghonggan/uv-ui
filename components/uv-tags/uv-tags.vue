@@ -183,7 +183,7 @@
 
 		&__text {
 			&--micro {
-				font-size: 9px;
+				font-size: 11px;
 			}
 
       &--mini {
@@ -203,8 +203,8 @@
 		}
 
     &--micro {
-      height: 12px;
-      line-height: 12px;
+      height: 14px;
+      line-height: 14px;
       padding: 0 3px;
       white-space: nowrap;
       &--right {
@@ -213,8 +213,8 @@
     }
 
 		&--mini {
-			height: 22px;
-			line-height: 22px;
+			height: 18px;
+			line-height: 18px;
 			padding: 0 5px;
 			&--right {
 				padding-right: 2px;
