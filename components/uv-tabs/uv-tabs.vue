@@ -8,7 +8,7 @@
 					:scroll-left="scrollLeft"
 					scroll-with-animation
 					class="uv-tabs__wrapper__scroll-view"
-					:show-scrollbar="false"
+					:show-scrollbar="true"
 					ref="uv-tabs__wrapper__scroll-view"
 				>
 					<view
