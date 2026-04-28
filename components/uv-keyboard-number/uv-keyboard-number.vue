@@ -25,8 +25,10 @@
           class="uv-keyboard__button-wrapper__button uv-keyboard__button-wrapper__button--gray"
           hover-class="uv-hover-class"
           :hover-stay-time="200"
-          @touchstart.stop="backspaceClick"
+          @touchstart.stop.prevent="backspaceClick"
           @touchend="clearTimer"
+          @mousedown="backspaceClick"
+          @mouseup="clearTimer"
       >
         <uv-icon
             name="backspace"
