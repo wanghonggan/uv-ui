@@ -24,7 +24,7 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"publish": "npm publish --registry https://registry.npmjs.org/",
-		"publish:latest": "npm publish --registry https://registry.npmjs.org/ --tag latest"
+		"publish:beta": "npm publish --registry https://registry.npmjs.org/ --tag beta"
 	},
 	"publishConfig": {
 		"access": "public",
