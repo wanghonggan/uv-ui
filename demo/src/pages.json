@@ -11,6 +11,12 @@
       "style": {
         "navigationBarTitleText": "uv-ui 数字键盘测试"
       }
+    },
+    {
+      "path": "pages/parse/index",
+      "style": {
+        "navigationBarTitleText": "uv-parse 富文本测试"
+      }
     }
   ],
   "globalStyle": {
